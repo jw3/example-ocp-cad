@@ -4,7 +4,7 @@ from ocp_viewer import show
 
 from util import *
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     width = 40
     depth = 40
     thickness = 6
@@ -12,7 +12,11 @@ if __name__ == '__main__':
     corner_hole_spacing = 35
     half_spacing = corner_hole_spacing / 2
 
-    corner_holes = [(x, y, 0) for x in (-half_spacing, half_spacing) for y in (-half_spacing, half_spacing)]
+    corner_holes = [
+        (x, y, 0)
+        for x in (-half_spacing, half_spacing)
+        for y in (-half_spacing, half_spacing)
+    ]
 
     with BuildPart() as plate:
         cad.Box(width, depth, thickness)
