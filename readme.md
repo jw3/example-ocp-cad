@@ -5,7 +5,8 @@ PyCharm + build123d + OCP Viewer
 
 1. Using PyCharm + uv
 2. run `uv run python -m ocp_viewer`
-3. Viewer in IDE brower - http://127.0.0.1:3939
+    - http://127.0.0.1:3939
+3. Open viewer.html in IDE brower
 
 ### Interop with FreeCAD
 
